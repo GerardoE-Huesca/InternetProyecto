@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Interactivo</title>
+
+    <!-- Incluir Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <br>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" id="home-link" class="active" onclick="showPage('home')">Inicio</a></li>
+            <li><a href="#" id="quees-link" onclick="showPage('quees')">Qué es</a></li>
+            <li><a href="#" id="accesorias-link" onclick="showPage('accesorias')">Accesorias</a></li>
+            <li><a href="#" id="cursos-link" onclick="showPage('cursos')">Cursos</a></li>
+            <li><a href="#" id="articulos-link" onclick="showPage('articulos')">Artículos</a></li>
+            <!-- Ícono de carrito de compras en lugar de "Carrito" -->
+            <li><a href="#" id="carrito-link" onclick="showPage('carrito')"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de las páginas -->
+    <div class="content">
+        <section id="home" class="page active">
+            <h1></h1>
+            <p></p>
+        </section>
+        
+        <section id="quees" class="page">
+            <h1>¿Qué es?</h1>
+            <p>Descripción detallada de nuestro servicio o producto.</p>
+        </section>
+        
+        <section id="accesorias" class="page">
+            <h1>Nuestras Accesorias</h1>
+            <p>Detalles sobre las asesorías que ofrecemos.</p>
+        </section>
+        
+        <section id="cursos" class="page">
+            <h1>Cursos Disponibles</h1>
+            <p>Información sobre los cursos que puedes tomar.</p>
+        </section>
+        
+        <section id="articulos" class="page">
+            <h1>Artículos Recomendados</h1>
+            <p>Aquí encontrarás artículos relacionados con nuestros servicios.</p>
+        </section>
+        
+        <section id="carrito" class="page">
+            <h1>Tu Carrito</h1>
+            <p>Este es tu carrito de compras.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

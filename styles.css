@@ -1,0 +1,76 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff; 
+}
+
+.navbar {
+    background-color: #028dac; /* Verde oscuro */
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    background-color: #009b49; /* Verde más claro */
+}
+
+.navbar ul li a.active {
+    background-color: #00a73a; /* Azul */
+}
+
+/* Ajuste del ícono del carrito */
+.navbar ul li a i {
+    font-size: 18px;
+    color: white;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+  }
+
+/* Estilos para las páginas */
+.content {
+    padding: 20px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Estilos de encabezados y párrafos */
+h1 {
+    color: #000000; /* Verde oscuro */
+}
+
+p {
+    color: #000000; /* Verde intermedio */
+}
